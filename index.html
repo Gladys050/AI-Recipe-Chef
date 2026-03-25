@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Recipe Generator</title>
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="bg-texture"></div>
+
+    <div class="container">
+      <header>
+        <div class="logo">🍳</div>
+        <h1>AI Recipe Chef</h1>
+        <p class="tagline">
+          Tell me what you have — I'll tell you what to cook.
+        </p>
+      </header>
+
+      <main>
+        <div class="form-card">
+          <form id="recipe-form">
+            <div class="field-group">
+              <label for="dish-name">Dish name or topic</label>
+              <input
+                type="text"
+                id="dish-name"
+                placeholder="e.g. Pasta, Stir Fry, Chocolate Cake…"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="ingredients">Available ingredients</label>
+              <input
+                type="text"
+                id="ingredients"
+                placeholder="e.g. chicken, garlic, tomatoes, rice…"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="dietary">Dietary preference</label>
+              <select id="dietary">
+                <option value="">No preference</option>
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="keto">Keto</option>
+                <option value="gluten-free">Gluten-Free</option>
+                <option value="dairy-free">Dairy-Free</option>
+                <option value="paleo">Paleo</option>
+              </select>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Generate Recipe</span>
+              <span class="btn-icon">✨</span>
+            </button>
+          </form>
+        </div>
+
+        <div id="recipe-output" class="recipe-card hidden">
+          <div id="recipe-content"></div>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          Crafted with ❤️ by
+          <a href="https://github.com/Gladys050" target="_blank"
+            >Gladys Monnapule</a
+          >
+          ·
+          <a href="https://github.com/Gladys050/AI-Recipe-Chef" target="_blank"
+            >GitHub</a
+          >
+          ·
+          <a href="https://ai-poems-eight.vercel.app/" target="_blank"
+            >Vercel</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
