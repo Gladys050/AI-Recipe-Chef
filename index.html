@@ -19,23 +19,21 @@
         <div class="logo">🍳</div>
         <h1>AI Recipe Chef</h1>
         <p class="tagline">
-          Tell me what you have — I'll tell you what to cook.
+          Turn your ingredients into delicious recipes instantly.
         </p>
+
+        <div class="example">Try: <span>chicken, rice, garlic</span></div>
       </header>
 
       <main>
         <div class="form-card">
-          <form id="recipe-form">
-            <div class="field-group">
-              <label for="dish-name">Dish name or topic</label>
-              <input
-                type="text"
-                id="dish-name"
-                placeholder="e.g. Pasta, Stir Fry, Chocolate Cake…"
-                autocomplete="off"
-                required
-              />
-            </div>
+          <div class="field-group">
+  <label for="ingredients">Available ingredients</label>
+  <div class="input-wrapper">
+    <span>🥕</span>
+    <input type="text" id="ingredients" placeholder="e.g. chicken, garlic..." />
+  </div>
+</div>
 
             <div class="field-group">
               <label for="ingredients">Available ingredients</label>
