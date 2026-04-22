@@ -19,7 +19,7 @@
 
 body {
   background-color: var(--bg);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Lato", sans-serif;
   color: var(--text);
   min-height: 100vh;
 }
@@ -43,6 +43,10 @@ header {
   margin-bottom: 10px;
 }
 
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
 h1 {
   font-size: 36px;
   font-weight: 700;
@@ -346,4 +350,9 @@ footer a:hover {
   background: transparent;
   flex: 1;
   padding: 12px 0;
+}
+.empty-state {
+  text-align: center;
+  color: var(--text-soft);
+  padding: 20px;
 }
