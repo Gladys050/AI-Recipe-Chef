@@ -108,7 +108,7 @@ input::placeholder {
   width: 100%;
   margin-top: 8px;
   padding: 14px;
-  background-color: var(--primary);
+  background-color: linear-gradient(135deg, var(--primary), var(--accent));
   color: white;
   border: none;
   border-radius: 8px;
@@ -121,6 +121,8 @@ input::placeholder {
 
 .submit-btn:hover {
   background-color: #9e3c06;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 .submit-btn:active {
   background-color: #7a2e04;
@@ -315,4 +317,33 @@ footer a:hover {
   h1 {
     font-size: 28px;
   }
+}
+.example {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+.example span {
+  color: var(--primary);
+  font-weight: bold;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.input-wrapper span {
+  margin-right: 6px;
+}
+
+.input-wrapper input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  padding: 12px 0;
 }
