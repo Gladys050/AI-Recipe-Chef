@@ -16,10 +16,13 @@ Clean UI/UX design
 Frontend engineering best practices
 Problem-solving through product thinking
 ✨ Features
+<br>
 🧠 AI Recipe Generation
 Generate complete recipes instantly using natural language prompts.
+<br>
 🥕 Ingredient-Based Suggestions
 Input what you have at home and get relevant recipes.
+<br>
 🥗 Dietary Customization
 Supports vegan, vegetarian, keto, gluten-free, and more.
 📄 Structured Recipe Output
@@ -27,9 +30,11 @@ Recipes are formatted into:
 Ingredients list
 Step-by-step instructions
 Cooking time, servings, and difficulty
+<br>
 Chef’s tip
 ⏳ Loading & Feedback States
 Smooth UX with real-time feedback during generation.
+<br>
 📱 Responsive Design
 Works across mobile and desktop devices.
 🛠️ Tech Stack
@@ -53,6 +58,7 @@ AI processes the request and returns a formatted recipe
 App:
 Cleans response
 Dynamically renders structured UI
+<br>
 🎯 Key Engineering Decisions
 Prompt Engineering
 Designed a strict HTML output format to ensure consistent rendering.
